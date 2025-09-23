@@ -1,0 +1,3 @@
+﻿  project 2.cpp
+C:\Users\Академия\source\repos\project 2\project 2\project 2.cpp(12,21): warning C4244: инициализация: преобразование "int" в "float", возможна потеря данных
+  project 2.vcxproj -> C:\Users\Академия\source\repos\project 2\x64\Debug\project 2.exe
