@@ -1,39 +1,40 @@
-﻿//F10 = запуск откладчика
-//Ctrl + D + A - если отсуствует панель переменных
-//Shift + F5 = остановка
-// F9 - точка остановки
-// // F5 - запуск с точкой остановки
-
-#include <iostream>
+﻿#include <iostream>
+#include <stdlib.h>
+#include <time.h>
 
 using namespace std;
 
 int main() {
-    setlocale(LC_ALL, "ru");
-    int m, n;
-    cout << "Введите M: ";
-    cin >> m;
-    cout << "Введите N: ";
-    cin >> n;
+	setlocale(LC_ALL, "ru");
 
-    int num = 1;
-    for (int i = 0; i < m; i++) {
-        for (int j = 0; j < n; j++) {
-            cout << num << "   ";
-            num++;
-        }
-        cout << endl;
-    }
+	const int row1 = 5;
+	const int col1 = 10;
+	int array1[row1][col1];
 
-    return 0;
+	cout << "Массив 5 на 10" << "\n";
+	for (int i = 0; i < row1; i++) {
+		for (int j = 0; j < col1; j++) {
+			array1[i][j] = rand() % 50;
+			cout << array1[i][j] << "  ";
+		}
+		cout << "\n";
+	}
+	cout << "\n";
+	cout << "\n";
+	
+
+	const int row2 = 5;
+	const int col2 = 5;
+	int array2[row2][col2];
+
+	cout << "Массив 5 на 5" << "\n";
+	for (int i = 0; i < row2; i++) {
+		for (int j = 0; j < col2; j++) {
+			array2[i][j] = array1[i][j] + array1[i][j+ 1];
+			cout << array2[i][j] << "  ";
+		}
+		cout << "\n";
+	}
+	return 0;
 }
-
-
-
-
-
-
-
-
-
 
