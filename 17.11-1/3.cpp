@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+//Функция для нахождения совершенного числа
 bool Perfect(int a){
     int sum = 0;
     for(int i = 1; i < a; i++){
