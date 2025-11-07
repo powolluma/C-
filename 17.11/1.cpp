@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+//Функция для вывода массива
 void ShowMatrix(char matr[5][8], int row, int col){
     for(int i = 0; i < row; i++){
         for(int j = 0; j < col; j++){
@@ -11,6 +12,7 @@ void ShowMatrix(char matr[5][8], int row, int col){
     cout << endl;
 }
 
+//Функция для значений массива (вывод "*")
 void InitMatrix(char matr[5][8], int row, int col){
     for(int i = 0; i < row; i++){
         for(int j = 0; j < col; j++){
