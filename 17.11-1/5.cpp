@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+//Функция для определения счастливого числа
 bool HappyNumber(int a){
     int one = a / 100000;
     int two = a / 10000 % 10;
