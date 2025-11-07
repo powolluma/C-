@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+//Функция для нахождения факториала (перемножения на себя в цикле)
 int Factorial(int number){
     int count = 1;
     for(int i = 1; i <= number; i++){
