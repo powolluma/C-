@@ -1,10 +1,11 @@
 #include <iostream>
 using namespace std;
 
+//Функция нахождения максимального из двух чисел
 int Max (int a, int b){
     return a > b ? a : b;
 }
-
+//Функция нахождения минимального из двух чисел
 int Min (int a, int b){
     return a < b ? a : b;
 }
