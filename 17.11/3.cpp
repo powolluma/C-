@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+//Функция для определения простого числа (через true и false)
 bool SimpleNumber(int a){
     if (a <= 1){
         return false;
