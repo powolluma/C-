@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+//Функция для определения true или false
 bool TruthAndLie (int a, int b){
     if (a > b){
         return true;
