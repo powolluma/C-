@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+//Функция для возведения числа в куб (умножение числа в цикле)
 int Cube(int number){
     int count = 1;
     for(int i = 0; i < 3; i++){
