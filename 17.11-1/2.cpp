@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+//Функция для сложения чисел в определенном диапазоне
 int SumNumber(int a, int b){
     int count = 0;
     for(int i = a + 1; i < b; i++){
