@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+//Функция для определения масти и номера карты
 void ShowCard(int a, int b){
     switch(a){
         case 6:
