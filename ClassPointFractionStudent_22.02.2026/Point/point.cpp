@@ -5,8 +5,6 @@ using namespace std;
 int main() {
     setlocale(LC_ALL, "Russian");
 
-    cout << "=== Тестирование класса Point ===\n\n";
-
     //Конструктор по умолчанию
     Point p1;
     cout << "Точка по умолчанию: ";
@@ -26,4 +24,5 @@ int main() {
     p2.OutputCoordinate();
 
     return 0;
+
 }
