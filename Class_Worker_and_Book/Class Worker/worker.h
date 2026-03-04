@@ -3,7 +3,7 @@
 #include <string>
 using namespace std;
 
-//Класс
+//РљР»Р°СЃСЃ Р Р°Р±РѕС‚РЅРёРє
 class Worker {
 private:
 	string FIO;
@@ -12,22 +12,27 @@ private:
 	int Money;
 
 public:
+	//РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ explicit
 	explicit Worker(const string& WorkFIO = "", const string& WorkProfession = "", const int& WorkYearToWork = 0, const int& WorkMoney = 0)
 		: FIO(WorkFIO), Profession(WorkProfession), YearToWork(WorkYearToWork), Money(WorkMoney){}
 
-	//Геттеры
+	//РЎРµС‚С‚РµСЂС‹ РґР»СЏ РІРѕР·РІСЂР°С‚Р° Р·РЅР°С‡РµРЅРёР№
 	string GetFIO() const { return FIO; }
 	string GetProfession() const { return Profession; }
 	int GetYearToWork() const { return YearToWork; }
 	int GetMoney() const { return Money; }
 
-	//Методы
+	//РњРµС‚РѕРґС‹
 
-	//Поиск Работников по заданному выще стажу лет
+	//Р’С‹РІРѕРґ СЂР°Р±РѕС‚РЅРёРєР°
+	void ShowWorker() const;
+
+	//РџРѕРёСЃРє СЂР°Р±РѕС‚РЅРёРєР° РїРѕ РіРѕРґР°Рј
 	void WorkerFromYear(const Worker workers[], int size, int YearToWork) const;
 
-	//Поиск работников по заданной выше зарплате
+	//РџРѕРёСЃРє СЂР°Р±РѕС‚РЅРёРєР° РїРѕ Р·Р°СЂРїР»Р°С‚Рµ
 	void WorkerFromMoney(const Worker workers[], int size, int Money) const;
-	//Поиск работников занимающие заданную должность
+	
+	//РџРѕРёСЃРє СЂР°Р±РѕС‚РЅРёРєР° РїРѕ РїСЂРѕС„РµСЃСЃРёРё
 	void WorkerFromProfession(const Worker workers[], int size, const string& Profession) const;
 };

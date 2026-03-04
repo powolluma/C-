@@ -3,19 +3,19 @@
 #include "book.h"
 using namespace std;
 
-//Методы
+//пїЅпїЅпїЅпїЅпїЅпїЅ
 
-//Вывод книги
+//пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 void Book::ShowBook() const{
-	cout << "Автор: " << author << endl;
-	cout << "Название: " << name << endl;
-	cout << "Издание: " << publish << endl;
-	cout << "Год: " << year << endl;
-	cout << "Количество: " << count << endl;
-	cout << "Страницы: " << page << endl;
+	cout << "пїЅпїЅпїЅпїЅпїЅ: " << author << endl;
+	cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: " << name << endl;
+	cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: " << publish << endl;
+	cout << "пїЅпїЅпїЅ: " << year << endl;
+	cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: " << count << endl;
+	cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: " << page << endl;
 }
 
-//Вывод книги по Автору
+//пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 void Book::PrintBookFromAuthor(const Book book[], int size, const string& author) const{
 	for (int i = 0; i < size; i++) {
 		if (book[i].getAuthor() == author) {
@@ -25,7 +25,7 @@ void Book::PrintBookFromAuthor(const Book book[], int size, const string& author
 	}
 }
 
-//Вывод книги по Издательству
+//пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 void Book::PrintBookFromPublish(const Book book[], int size, const string& publish) const {
 	for (int i = 0; i < size; i++) {
 		if (book[i].getPublish() == publish) {
@@ -35,7 +35,7 @@ void Book::PrintBookFromPublish(const Book book[], int size, const string& publi
 	}
 }	
 
-//Поиск книги после определенного год
+//пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
 void Book::PrintBookFromYear(const Book book[], int size, int year) const {
 	for (int i = 0; i < size; i++) {
 		if (book[i].getYear() >= year) {
